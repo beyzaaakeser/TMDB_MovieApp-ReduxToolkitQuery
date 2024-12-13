@@ -26,7 +26,7 @@ const Detail = () => {
       .catch((err) => setError(err));
   }, []);
 
-  if (error) return <Error info={error} />;
+  if (error) return <div>Error</div>;
   if (!movie) return <Loader />;
 
   return (
@@ -37,8 +37,8 @@ const Detail = () => {
             <Button movie={movie} />
           </div>
         </div>
-        
-        <div className=''>
+
+        <div className="">
           <Info movie={movie} />
         </div>
 

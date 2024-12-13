@@ -1,6 +1,8 @@
 import { imageURL } from '../../utils/constants';
 import { CastType } from '../../utils/types';
+//@ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+//@ts-ignore
 import '@splidejs/react-splide/css';
 
 type Props = {
@@ -9,7 +11,7 @@ type Props = {
 
 const ActorList = ({ actors }: Props) => {
   return (
-    <div className='md:px-24 p-5'>
+    <div className="md:px-24 p-5">
       <h2 className="font-semibold text-lg md:text-xl my-5">
         Actors and Actresses
       </h2>

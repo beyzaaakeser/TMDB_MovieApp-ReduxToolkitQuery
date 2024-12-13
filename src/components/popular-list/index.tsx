@@ -1,7 +1,9 @@
 import React from 'react';
 import { useGetMoviesQuery } from '../../redux/slice/movieSlice';
 import { MovieType, PopularType } from '../../utils/types';
+//@ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+//@ts-ignore
 import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
 import {

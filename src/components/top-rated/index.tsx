@@ -6,7 +6,9 @@ import Loader from '../../pages/loader';
 import { useGetTopRatedMoviesQuery } from '../../redux/slice/topRatedSlice';
 import { useAppDispatch, useAppSelector } from '../../utils/hooks';
 import { MovieType } from '../../utils/types';
+//@ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+//@ts-ignore
 import '@splidejs/react-splide/css';
 import { addFavorite, removeFavorite } from '../../redux/slice/favoritesSlice';
 import { Link } from 'react-router-dom';

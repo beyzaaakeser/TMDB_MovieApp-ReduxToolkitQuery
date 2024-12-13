@@ -4,7 +4,9 @@ import ReactSelect from 'react-select';
 import { GenresType, MovieType } from '../../utils/types';
 import Loader from '../../pages/loader';
 import api from '../../utils/api';
+//@ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+//@ts-ignore
 import '@splidejs/react-splide/css';
 import {
   BsFillBookmarkHeartFill,
@@ -116,7 +118,7 @@ const TrendingGenres: React.FC = () => {
                       alt={movie.title}
                       className="rounded-md max-w-[200px] max-sm:max-w-[350px] "
                     />
-                  
+
                     <h3 className="text-white mt-2 text-center text-ellipsis line-clamp-1 max-w-[200px] max-sm:max-w-[350px]">
                       {movie.title}
                     </h3>
