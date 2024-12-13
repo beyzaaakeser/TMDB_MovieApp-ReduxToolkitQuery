@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+<h1>My TMDB Movie App - Redux Toolkit Query</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This modern movie application, developed using The Movie Database (TMDb) API, offers the user an interactive and functional movie experience. React and TypeScript technologies were used in the project, and Vite was configured to increase the application's performance and optimize the user experience. In addition, a responsive design was developed using TailwindCSS to create a user-friendly interface.
+Users can access current movie suggestions under Popular Movies, Top Rated Movies, and Trending Categories. In the Trending Categories section, thanks to the React-Select integration, users can select and see the movies in their preferred genre listed.
+There is a special detail page for each movie. On this page:
+Included are the movie's name, IMDb score, spoken languages, and summary information.
+The names and photos of the actors in the movie are shown with a user-friendly SplideJS slider.
+Users can add and remove the movies they want to watch to their favorite lists. Favorite movie management is managed with the Redux Toolkit, which improves the user experience.
 
-Currently, two official plugins are available:
+<h2>Technical Details</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- State Management:
+Redux Toolkit and React-Redux are used for global state management throughout the application. This provides a fast and reliable data flow, especially in the favorites listing feature.
 
-## Expanding the ESLint configuration
+- API Requests:
+  Asynchronous data requests to the TMDb API with Axios have been optimized with Tanstack React Query, facilitating cache management and data query processes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Type Checks:
+  The application has been developed with TypeScript, providing strong static type checking. This has increased the reliability of the code base and minimized the possibility of errors.
 
-- Configure the top-level `parserOptions` property like this:
+- Style and Design:
+  TailwindCSS has created a flexible and modern design for the application while providing a fully responsive structure that automatically adapts to the user device.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<h2> The following technologies were used in the frontend development phase of my site: </h2>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- TypeScript
+- React (Vite)
+- Axios
+- React-Redux
+- Reduxjs/Toolkit
+- React-Select
+- React-Icons
+- Splidejs / React-Splide
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+<h3>Main Page</h3>
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![](/public/main.png)
+
+![](/public/main2.png)
+
+<h3>Trending Categories</h3>
+
+![](/public/trending-categories.png)
+
+![](/public/trending-categories2.png)
+
+<h3>Movie Detail</h3>
+
+![](/public/movie-detail.png)
+
+<h3>Favorites </h3>
+
+![](/public/favorite-list.png)
+
+![](/public/favorite-empty-page.png)
